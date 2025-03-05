@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="870.0" prefWidth="440.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserController">
+   <effect>
+      <ColorAdjust />
+   </effect>
+   <children>
+      <ImageView fitHeight="507.0" fitWidth="440.0" layoutX="2.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Downloads/Go%20User%20des.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="277.0" layoutX="102.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Downloads/Go%20Home.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="displayusername" layoutX="27.0" layoutY="484.0" prefHeight="25.0" prefWidth="41.0" text="Label">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="displaybirth" layoutX="27.0" layoutY="334.0" text="Label">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="displayphonenum" layoutX="51.0" layoutY="557.0" text="Label">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="displayemail" layoutX="27.0" layoutY="636.0" text="Label">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="displayaccountnumber" layoutX="27.0" layoutY="400.0" text="Label">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="displayname" layoutX="27.0" layoutY="257.0" text="Label">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Button fx:id="Btndeleteuser" layoutX="326.0" layoutY="18.0" mnemonicParsing="false" onAction="#btndeleteuserHandler" prefHeight="38.0" prefWidth="103.0" style="-fx-background-color: white; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: red;" text="Delete account" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Pane layoutX="27.0" layoutY="40.0" prefHeight="50.0" prefWidth="48.0" style="-fx-border-radius: 50; -fx-background-color: white; -fx-background-radius: 50; -fx-border-width: 2; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.2, 0, 4); -fx-border-color: 0,0,0,0.2;">
+         <children>
+            <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="12.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Downloads/Go%20Back.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="Btnback" layoutX="2.0" mnemonicParsing="false" onAction="#btnbackHandler" opacity="0.0" prefHeight="50.0" prefWidth="50.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="142.0" layoutY="784.0" prefHeight="50.0" prefWidth="160.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.2, 0, 4); -fx-background-radius: 8; -fx-border-radius: 8; -fx-border-width: 2;">
+         <children>
+            <ImageView fitHeight="43.0" fitWidth="151.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Downloads/Go%20Logout.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="Btnlogout" layoutX="-4.0" layoutY="-2.0" mnemonicParsing="false" onAction="#btnlogoutHandler" opacity="0.0" prefHeight="53.0" prefWidth="166.0" />
+         </children>
+      </Pane>
+      <Label layoutX="18.0" layoutY="378.0" text="Account Number:" />
+      <Button fx:id="Btnedit" layoutX="193.0" layoutY="189.0" mnemonicParsing="false" onAction="#btneditHandler" style="-fx-background-color: white; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: black;" text="Change Information" />
+   </children>
+</Pane>

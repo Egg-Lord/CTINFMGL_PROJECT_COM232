@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="870.0" prefWidth="440.0" style="-fx-background-color: #eff7f9;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TransactionController">
+   <effect>
+      <ColorAdjust />
+   </effect>
+   <children>
+      <ImageView fitHeight="68.0" fitWidth="277.0" layoutX="113.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Downloads/Go%20Home.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableviewhistory" layoutX="15.0" layoutY="235.0" prefHeight="426.0" prefWidth="412.0">
+        <columns>
+          <TableColumn fx:id="fromcol" prefWidth="112.0" text="From" />
+          <TableColumn fx:id="tocol" prefWidth="112.800048828125" text="To" />
+            <TableColumn fx:id="amountcol" prefWidth="84.7999267578125" text="Amount" />
+            <TableColumn fx:id="idcol" prefWidth="102.4000244140625" text="ID" />
+        </columns>
+      </TableView>
+      <Pane layoutX="27.0" layoutY="40.0" prefHeight="50.0" prefWidth="48.0" style="-fx-border-radius: 50; -fx-background-color: white; -fx-background-radius: 50; -fx-border-width: 2; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.2, 0, 4); -fx-border-color: 0,0,0,0.2;">
+         <children>
+            <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="12.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Downloads/Go%20Back.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="Btnback" mnemonicParsing="false" onAction="#btnbackHandler" opacity="0.0" prefHeight="50.0" prefWidth="50.0" />
+         </children>
+      </Pane>
+   </children>
+</Pane>
